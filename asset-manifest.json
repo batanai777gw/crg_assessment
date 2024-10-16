@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/crg_assessment/static/css/main.cbdc4eaa.css",
+    "main.js": "/crg_assessment/static/js/main.4ccb6f63.js",
+    "static/js/453.eeab7d1a.chunk.js": "/crg_assessment/static/js/453.eeab7d1a.chunk.js",
+    "index.html": "/crg_assessment/index.html",
+    "main.cbdc4eaa.css.map": "/crg_assessment/static/css/main.cbdc4eaa.css.map",
+    "main.4ccb6f63.js.map": "/crg_assessment/static/js/main.4ccb6f63.js.map",
+    "453.eeab7d1a.chunk.js.map": "/crg_assessment/static/js/453.eeab7d1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbdc4eaa.css",
+    "static/js/main.4ccb6f63.js"
+  ]
+}
