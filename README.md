@@ -22,3 +22,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 In this project, I utilized the https://arthurfrost.qflo.co.za/php/getTimeline.php API endpoint to retrieve timeline JSON data via AJAX calls using axios in a React application. The fetched data is dynamically displayed using React elements and JavaScript logic. To improve user experience and manage large datasets, I implemented pagination, allowing users to navigate through the data using "Next" and "Previous" buttons. The app features both CSS and inline styling for a clean, responsive interface. Pagination helps efficiently load and display small portions of data at a time, ensuring the UI remains user-friendly and performant.
 
+To access the page live on your browser, use the link below, I deployed the app on GitHub [p.s best view on Microsft Edge browser]
+https://batanai777gw.github.io/crg_assessment/
