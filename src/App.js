@@ -9,7 +9,7 @@ function App() {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    // Fetch data from the provided endpoint
+    // Fetching data from the Timeline.php endpoint
     fetch("https://arthurfrost.qflo.co.za/php/getTimeline.php")
       .then((response) => {
         if (!response.ok) {
@@ -18,7 +18,7 @@ function App() {
         return response.json();
       })
       .then((jsonData) => {
-        setTimelineData(jsonData.Timeline); // Access the "Timeline" array
+        setTimelineData(jsonData.Timeline);
         setLoading(false);
       })
       .catch((err) => {
@@ -27,12 +27,11 @@ function App() {
       });
   }, []);
 
-  // Calculate the index of the first and last item for the current page
+  // Calculating the index of the first and last item for the current page for pagination
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = timelineData.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Function to handle page change
   const handleNextPage = () => {
     if (currentPage < Math.ceil(timelineData.length / itemsPerPage)) {
       setCurrentPage(currentPage + 1);
@@ -71,7 +70,6 @@ function App() {
                 >
                   <div
                     style={{
-                      backgroundColor: "#f0f0f0",
                       padding: "20px",
                       width: "45%",
                       height: "200px",
@@ -97,7 +95,6 @@ function App() {
 
                   <div
                     style={{
-                      backgroundColor: "#e0e0e0",
                       padding: "20px",
                       width: "45%",
                       height: "200px",
@@ -148,7 +145,6 @@ function App() {
           ))}
         </ul>
       </div>
-
       <div className="pagination">
         <div style={{ marginTop: "20px" }}>
           <button
@@ -158,7 +154,9 @@ function App() {
           >
             Previous
           </button>
-          <span style={{ margin: "0 10px" }}>Page {currentPage}</span>
+          <span style={{ margin: "0 10px", color: "#f5911e" }}>
+            Page {currentPage}
+          </span>
           <button
             onClick={handleNextPage}
             disabled={
